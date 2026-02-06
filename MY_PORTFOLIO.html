@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathvik | Video Editor Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+}
+
+/* ================= HEADER ================= */
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#0b0f1a,#121a2f);
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#6ae3ff,#9b7bff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.1rem;
+opacity:0.85;
+}
+
+.tools{
+margin-top:20px;
+font-size:0.95rem;
+color:#6ae3ff;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:14px 36px;
+border-radius:30px;
+background:linear-gradient(90deg,#6ae3ff,#9b7bff);
+color:#000;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* ================= SECTION ================= */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:40px;
+position:relative;
+}
+
+.section-title::after{
+content:'';
+width:60px;
+height:4px;
+background:#6ae3ff;
+position:absolute;
+bottom:-10px;
+left:0;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+max-width:700px;
+line-height:1.8;
+opacity:0.9;
+}
+
+/* ================= VIDEO GRID ================= */
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* Horizontal Video */
+.video-16-9{
+aspect-ratio:16/9;
+background:#000;
+border-radius:14px;
+overflow:hidden;
+}
+
+/* Vertical Video */
+.video-9-16{
+aspect-ratio:9/16;
+background:#000;
+border-radius:14px;
+overflow:hidden;
+max-width:350px;
+margin:auto;
+}
+
+video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+max-width:500px;
+}
+
+.contact-box p{
+margin-bottom:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+text-align:center;
+padding:30px;
+background:#080b14;
+font-size:0.9rem;
+opacity:0.7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:600px){
+.hero h1{
+font-size:2.2rem;
+}
+section{
+padding:60px 6%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+
+<header>
+<div class="hero">
+<h1>Hi, I'm <span>Sathvik</span></h1>
+<p>Professional Video Editor</p>
+<div class="tools">Premiere Pro • After Effects</div>
+<a href="#work" class="btn">View My Work</a>
+</div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<p class="about">
+I am a passionate video editor specializing in cinematic storytelling, short-form content, and motion graphics. I use Adobe Premiere Pro and After Effects to craft engaging visuals with smooth pacing, clean transitions, and professional color grading.
+</p>
+</section>
+
+<!-- ================= WORK ================= -->
+
+<section id="work">
+<h2 class="section-title">My Work</h2>
+
+<div class="video-grid">
+
+<!-- Horizontal Video (9:16) -->
+<div class="video-9-16">
+<video src="video1.mp4" controls></video>
+</div>
+
+<!-- Vertical Video (9:16) -->
+<div class="video-9-16">
+<video src="video2.mp4" controls></video>
+</div>
+
+<!-- Vertical Video (16:9) -->
+<div class="video-16-9">
+<video src="video3.mp4" controls></video>
+</div>
+
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p>
+Email:
+<a href="mailto:sathvikmutyala62@gmail.com" style="color:#6ae3ff;">
+sathvikmutyala62@gmail.com
+</a>
+</p>
+
+<p>
+Instagram:
+<a href="https://instagram.com/stvae_fx" target="_blank" style="color:#6ae3ff;">
+@stvae_fx
+</a>
+</p>
+
+<p>
+WhatsApp:
+<a href="https://wa.me/918125499679" target="_blank" style="color:#6ae3ff;">
++91 8125499679
+</a>
+</p>
+
+</div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+© Sathvik • Portfolio
+</footer>
+
+</body>
+</html>
